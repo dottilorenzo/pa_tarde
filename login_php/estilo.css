@@ -1,79 +1,26 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { height: 100vh; background: #1fcccc; display: flex; align-items: center; justify-content: center; }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.container { 
+    display: flex; width: 850px; height: 500px; background: #10614d; 
+    border-radius: 15px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-body {
-    background-color: #f0f2f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.esquerda { 
+    flex: 1; background: url(https://img.freepik.com/psd-gratuitas/elementos-medicos-3d-com-um-batimento-cardiaco_23-2151202567.jpg?semt=ais_hybrid&w=740&q=80) center/cover; position: relative;
 }
 
-
-.card {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    width: 350px;
-    text-align: center;
+.overlay {
+    position: absolute; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.4);
+    display: flex; flex-direction: column; justify-content: center; padding: 30px; color: white;
 }
 
+.direita { flex: 1.2; padding: 40px; display: flex; flex-direction: column; justify-content: center; }
 
-.profile-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1.5rem;
-    border: 3px solid #4a90e2;
-}
+h2 { margin-bottom: 20px; color: #333; }
+input { width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #1d0808; border-radius: 5px; }
+.row { display: flex; gap: 10px; }
+button { width: 100%; padding: 12px; background: #00040a; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+button:hover { background: #5e7746; }
+p { margin-top: 15px; font-size: 14px; text-align: center; }
 
-
-.input-group {
-    text-align: left;
-    margin-bottom: 1rem;
-}
-
-label {
-    display: block;
-    font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    outline: none;
-    transition: border-color 0.3s;
-}
-
-input:focus {
-    border-color: #4a90e2;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #4a90e2;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-button:hover {
-    background-color: #357abd;
-}
